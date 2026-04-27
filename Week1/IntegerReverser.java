@@ -10,6 +10,8 @@ public class IntegerReverser {
      System.out.print("Input second Integer: ");
      int SecondInteger = Integer.parseInt(secondinteger.nextLine());
      // Outputs the Integer Normally then in reversed order
-    System.out.println(FirstInteger + " and " + SecondInteger + " in reverse order is: " + SecondInteger + " " + FirstInteger);
+    System.out.println(FirstInteger + " and " + SecondInteger + " in reverse order is: " + SecondInteger + ", " + FirstInteger);
+    firstinteger.close();
+    secondinteger.close();
     }
 }
