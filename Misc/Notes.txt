@@ -1,11 +1,10 @@
---- ScannerUsage ---
-I pratically copied over the code I did last time but added comments
-
---- RectangleAreaPerimeter ---
-I encountered non-code issues as when I created the file I forgot to make it a java file, I ended up troubleshooting for no reason
-Once converted though, I ran into the issue of scanner only doing strings, so I had to learn how to parse in java.
-There is a bug where the system fails if a non-integer input is made.
-
---- AverageCalculator ---
-Works well, most likely has the same bug from RectangleAreaPerimeter.
-I had to learn Float.parseFloat
+Order:
+Week 1
+1) ScannerUsage (Covers Task 1 & 2)
+2) RectangleAreaPerimeter
+3) AverageCalculator
+4) IntegerReverser
+5) AgeYearCalculator
+6) DoBAgeCalculator (WIP)
+7) FeetToMilesCalculator
+8) InterestCalculator

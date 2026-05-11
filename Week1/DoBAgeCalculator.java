@@ -4,6 +4,7 @@ public class DoBAgeCalculator {
         // Scanner to obtain User's Day of Birth
         Scanner userday = new Scanner(System.in);
         System.out.print("Input the day you were born (0-30): ");
+        int UserDay = Integer.parseInt(userday.nextLine());
         // Scanner to obtain User's Month of Birth
        Scanner usermonth = new Scanner(System.in);
        System.out.print("Input the year you were born (0-12): ");
@@ -14,5 +15,9 @@ public class DoBAgeCalculator {
         int UserYear = Integer.parseInt(useryear.nextLine());
         // 
         
+        // Closing Scanners
+        userday.close();
+        usermonth.close();
+        useryear.close();
     }
 }
