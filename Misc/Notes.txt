@@ -8,3 +8,9 @@ Week 1
 6) DoBAgeCalculator (WIP)
 7) FeetToMilesCalculator
 8) InterestCalculator
+
+Week 2
+1) AgeVerify
+2) LetterGradeToUnderGrad
+3) MultiplyTable (Covers task 4, 5 & 6)
+4) Percentage
