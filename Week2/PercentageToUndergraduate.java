@@ -13,5 +13,8 @@ public class PercentageToUndergraduate {
         else if (UserPercentage >= 40){System.out.println(UserPercentage + " = C/3rd.");}
         else if (UserPercentage < 40){System.out.println(UserPercentage + " = F/Fail.");}
         else {System.out.print("Invalid Input. Please insert an input from this range: (0-100)");}
+        // Closing Scanner
+        userpercentage.close();
+
     }   
 }
