@@ -2,7 +2,7 @@
 A github repository dedicated to Java.
 
 This Repository will include:
-- weekly java exercises
+- Weekly Java Exercises
 - Music Player
 - Student Grading Manager
 
