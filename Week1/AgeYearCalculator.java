@@ -22,6 +22,9 @@ public class AgeYearCalculator {
     else {
         System.out.print("Invalid Input. Please input either 0 or 1 for if it has been your birthday.");
     }
+    // New code to check if user is 18+ or not
+    if (UserAge >= 18) {System.out.println("You are 18 or older.");}
+    else {System.out.println("You are younger than 18.");}
     // Closing Scanners
     currentyear.close();
     userage.close();
