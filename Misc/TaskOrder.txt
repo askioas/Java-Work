@@ -16,5 +16,9 @@ Week 2
 4) PercentageToUnderGraduate
 
 Week 3 & 4
-1) StudentClass (Covers Task 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 3.10, 3.11, 3.12, 4.1, )
-[NOTES: This is where it got extremely difficult.]
+1) Student (Covers all tasks from Week 3 & Week 4 excluding extensions)
+[NOTES: Extremely difficult both to do and read.]
+
+Week 5
+1) ProductStockListStockDemo (Covers all tasks from Week 5)
+[NOTES: attempted new format as I kept getting lost in Student from Week 3 & 4]
