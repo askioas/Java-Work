@@ -4,8 +4,8 @@ Week 1
 2) RectangleAreaPerimeter
 3) AverageCalculator
 4) IntegerReverser
-5) AgeYearCalculator
-6) DoBAgeCalculator (WIP)
+5) AgeYearCalculator (Covers Week 1 task 6 & Week 2 task 1)
+6) DoBAgeCalculator 
 7) FeetToMilesCalculator
 8) InterestCalculator
 
