@@ -6,4 +6,4 @@ This Repository will include:
 - Music Player
 - Student Grading Manager
 
-For the order of files in terms of tasks assigned, please read Notes.txt.
+For the order of files in terms of tasks assigned, please read TaskOrder.txt.
