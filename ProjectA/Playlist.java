@@ -1,3 +1,4 @@
+package ProjectA;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -120,12 +121,12 @@ public class Playlist {
         System.out.println("--------------------------");
         System.out.print("Input corresponding number to use a function: ");
         try {
-            int userMenuChoice = Integer.parseInt(UserMenuInput.nextLine());
-            if (userMenuChoice == 1) {musicPlayer.add(UserMenuInput);}
-            else if (userMenuChoice == 2) {musicPlayer.remove(UserMenuInput);}
-            else if (userMenuChoice == 3) {musicPlayer.display();}
-            else if (userMenuChoice == 4) {musicPlayer.displayExclude(UserMenuInput);}
-            else if (userMenuChoice == 5) {System.out.println("Exiting Music Player. Goodbye!");
+            String userMenuChoice = UserMenuInput.nextLine();
+            if (userMenuChoice.equals("1")) {musicPlayer.add(UserMenuInput);}
+            else if (userMenuChoice.equals("2")) {musicPlayer.remove(UserMenuInput);}
+            else if (userMenuChoice.equals("3")) {musicPlayer.display();}
+            else if (userMenuChoice.equals("4")) {musicPlayer.displayExclude(UserMenuInput);}
+            else if (userMenuChoice.equals("5")) {System.out.println("Exiting Music Player. Goodbye!");
                 activeMenu = false;
             }
             else {System.out.println("Invalid input. Please input a number from the menu options (1-5).");}}

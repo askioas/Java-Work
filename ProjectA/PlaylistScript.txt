@@ -1,0 +1,103 @@
+Playlist Script
+
+This video will be focused on dissecting the code for Project A - The music player - and present it functioning.
+--------
+Imports
+--------
+
+Firstly, the code starts with 2 imports. The first is Array List which allows the creation of dynamic lists that can have entries added, searched or removed. This was done as ArrayLists can handle being dynamically changed. The second is Scanner which allows the reading of user inputs by converting it into a variable.
+
+--------
+SongList & basic object class
+--------
+
+The first object class created is SongList. This class in split into 4 parts. The first is that it stores attributes of an object which is the musicName, musicArtist and musicListens, with the last entry being unique as it is stored as an integer compared to the first 2 string entries. The second part is the Constructor, which provides a template for future code to create objects. The third part are the Getters which read attributes, and the fourth part are the Setters which update attributes.
+
+--------
+Main
+--------
+
+Before advancing to the next object class, it is important to discuss the Main codeblock, which is the default codeblock that is used when the code is run. It can be identified by the line "public static void main." Within this code, the Main codeblock first creates the hardcoded pre-determined ArrayList entries. After that it calls the Display method which will be expanded on later. After the method, it outputs a menu where the user's input is recorded by a newly made Scanner. This scanner - which was first imported at the beginning - is created to receive the user's input which determines what Method to call, which is another topic mentioned later.
+
+--------
+MusicPlayer
+--------
+
+The second, largest and the most impactful class is the MusicPlayer class. This class is large due to containing various methods which are code blocks that perform specific functions when called. These methods are accessed when an object of MusicPlayer is created and when it is called on that created object.
+
+The first thing declared within this object is an attribute called an ArrayList. As mentioned before, they are dynamic lists that can have entries added, searched or removed. This ArrayList is called playlist.
+
+The next thing done is that the Constructor of the MusicPlayer object has created the ArrayList, meaning it is now usable throughout the project.
+
+--------
+Add Method
+--------
+
+After the Constructor, the first Method is created. This is the "Add" Method which contains a code block that specialises in adding entries to the dynamic Array List.
+
+Firstly, a Scanner is used to receive user input. Specifically, it records user input for a song's name, a song's artist and the song's global listens. A common issue that happens with using a Scanner is that the user input cannot be stored in the pre-determined data type. An example is here where the scanner is storing the user's input as an integer which is strictly whole numbers. If a user input contains anything but a whole number, the program will crash.
+
+To prevent this, two methods are implemented. The first method is the usage of the replace instance method. This instance method is separate from a class method as it is a pre-determined process compared to a class method which are made manually. The replace instance method is used to replace common spacers in large numbers such as commas and replace them with nothing, allowing the second method to parse it into an integer. 
+
+The second method is the Try-Catch statement, which which will try to convert the user input into an integer via parsing. In the case that the user input isn't able to be converted, the Catch part of the statement activates, which displays an error and breaks from the statement to return back to the main menu. When a user's input can be converted into an Integer, the Try part of the statement activates, allowing the user's song to be added to the ArrayList alongside a displayed message for user feedback before returning the user back to the main menu via the return instance method.
+
+--------
+Remove Method
+--------
+
+The next method is the "Remove" method that uses a user's input to remove an entry from the Array List. This also utilises a Scanner to obtain the user's input of a song title to remove it.
+
+A While loop is used here to loop a specific action until a condition is met. Firstly a Integer variable is made to serve as the counter for the while loop. Next the while loops activates, constantly looping through the code it contains while the condition of the songRemoveCount counter being smaller than the ArrayList is active. Within this loop is also an If statement which is a simple statement that checks if an entry contains a matching name to the user's input. Both statement work together to search the ArrayList entry by entry until it finds the song title that matches the user input. if it fails, it adds 1 to the counter, meaning that with enough fails, it will leave the while loop to present the error message and leaves the Method to return to the Main codeblock.
+
+If it can find the a matching name to an ArrayList entry, it will remove the entry containing it alongside displaying a message for feedback before returning the user back to the Main codeblock using the return instance method.
+
+--------
+Display Method
+--------
+
+The third Method made is the display method. This method handles displaying the ArrayList to the user in a consistent format. It achieves this by utilising another while loop with a counter variable that continues while the conditions of the DisplayCount counter being smaller than the ArrayList's size. In this loop, it reads the ArrayList entry that matches the number of the counter and outputs the attributes of the song into a hardcoded format for a consistent look. This section is automatic and doesn't use any user input, and returns back to the Main codeblock when it is done.
+
+--------
+Display Exclude Method
+--------
+
+The final Method in the MusicPlayer class is the Display Exclude Method. This method is similar to the Display Method but first requires a user's input of the minimum global listens entries must have to be displayed, excluding all entries that don't meet those requirements. Firstly it utilises the same combination of the replace instance method and the Try-Catch statement to correct user inputs like with adding an entry.
+
+If a user's input can successfully be converted, it accesses a while loop similar to the same used in the Display Method to automatically output the list, but first it must go through a if statement that only runs the code that outputs if the ArrayList entry's GlobalListens meets either exactly or above the minimum to display the code. If the ArrayList entry doesn't meet the requirement, it instead adds 1 to the displayExcludeCount until the while loop condition is no longer active. Afterwards it returns back to the Main Menu.
+
+--------
+Main Menu 2
+--------
+
+In order for the main menu to be constantly available, it is contained in a while loop that is active while a Boolean data type variable - a data type that can only be true or false - is active. If the user is done with the MusicPlayer, they can input the 5th option, which sets the Boolean variable to false, deactivating the loop and allowing the code to stop running naturally alongside a goodbye message.
+
+--------
+Code Running
+--------
+
+This section focuses on the code when it is being run. Firstly I will navigate the menu to add a new song to the playlist.
+
+--------
+Adding Song
+--------
+
+Here, each attribute of the song object is put into the Method. When inputting Global Listens specifically, the input will contain commas to show that the input is being cleaned.
+
+--------
+Removing Song
+--------
+
+Here, the song "Seer" is being removed via the song title being searched in each entry before being removed.
+
+--------
+Displaying Songs
+--------
+
+Here, the playlist will display each entry as they were added.
+
+
+--------
+Displaying Songs with Restriction
+--------
+
+Here, the input of the minimum amount of listens for a song to be displayed is 1 million. The input will contain periods to show the input being cleaned. Now it displays all songs but those that do not meet the minimum requirement. 
